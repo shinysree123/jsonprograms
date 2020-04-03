@@ -12,6 +12,6 @@ student.post('/student', (req, res) => {
     res.json(req.body);
 });
 
-student.listen(3000, () => {
+student.listen(process.env.PORT|| 3000, () => {
  console.log("server started");
 });

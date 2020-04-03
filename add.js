@@ -10,6 +10,6 @@ apps.post('/addition', (req, res) => {
     var num3= num1+num2;
     res.json({"sum=":num3});
 });
-apps.listen(3000, () => {
+apps.listen(process.env.PORT|| 3000, () => {
     console.log("server started");
    });

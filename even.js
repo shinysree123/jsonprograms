@@ -20,6 +20,6 @@ aps.post('/iseven', (req, res) => {
     
    
 });
-aps.listen(3600, () => {
+aps.listen(process.env.PORT|| 3600, () => {
     console.log("server started");
    });

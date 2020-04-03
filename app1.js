@@ -16,6 +16,6 @@ app.post('/gallery', (req, res) => {
     res.json(req.body);
 });
 
-app.listen(3234, () => {
+app.listen(process.env.PORT|| 3234, () => {
  console.log("server started");
 });
